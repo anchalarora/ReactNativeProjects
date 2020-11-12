@@ -6,6 +6,7 @@ import {
     Animated, Dimensions
 } from 'react-native';
 
+import { AppFonts } from '../utils/Fonts'
 
 const height = Dimensions.get('window').height;
 
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   splashText: {
-    //fontFamily: AppFonts.QuicksandBold,
+    fontFamily: AppFonts.QuicksandBold,
     fontSize: 30,
     marginTop: 20,
     color: '#FFFFFF',
