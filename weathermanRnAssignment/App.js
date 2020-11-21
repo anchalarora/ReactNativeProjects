@@ -7,8 +7,8 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import WeatherForecast from './src/screens/WeatherForecast';
-import Splash from './src/screens/Splash';
+import WeatherForecast from './src/screens/weatherForecast';
+import Splash from './src/screens/splash';
 
 
 import {createStore,applyMiddleware,compose } from 'redux'

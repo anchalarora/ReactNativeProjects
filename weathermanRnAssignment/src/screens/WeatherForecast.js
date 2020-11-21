@@ -13,13 +13,11 @@ import {
 
 import { TextInput } from 'react-native-gesture-handler';
 import moment from 'moment';
-import { AppFonts } from '../utils/Fonts'
+import { AppFonts } from '../utils/fonts'
 
 import { connect } from 'react-redux'
 
-import { fetchWeatherForecastData } from '../actions/ActionCreator'
-
-import NetworkUtility from '../utils/NetworkUtility'
+import { fetchWeatherForecastData } from '../actions/actionCreator'
 
 const mapDispatchtoProps = (dispatch) => {
   return {
@@ -31,7 +29,7 @@ const mapDispatchtoProps = (dispatch) => {
 const mapStatetoProps = (state) => {
   return {
     data: state.data,
-    isLoading: state.loading,
+    isLoading: state.isLoading,
     isError: state.isError
   }
 

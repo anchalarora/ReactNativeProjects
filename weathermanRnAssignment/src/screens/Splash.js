@@ -6,7 +6,7 @@ import {
     Animated, Dimensions
 } from 'react-native';
 
-import { AppFonts } from '../utils/Fonts'
+import { AppFonts } from '../utils/fonts'
 
 const height = Dimensions.get('window').height;
 

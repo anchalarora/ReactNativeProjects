@@ -3,9 +3,10 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-community/async-storage';
 import NetInfo from '@react-native-community/netinfo';
 
-import NetworkUtility from '../utils/NetworkUtility'
+import NetworkUtility from '../utils/networkUtility'
 
-import * as Constants from '../constants/Constants'
+import * as Constants from '../constants/apiConstants'
+import { fetchRequest, fetchSuccess, fetchError } from './weatherApiAction';
 
 export const fetchWeatherForecastData = (zipCode) => {
     return (dispatch) => {
@@ -13,7 +14,7 @@ export const fetchWeatherForecastData = (zipCode) => {
             console.log('connected : ' + state.isConnected);
             if (state.isConnected) {
                 console.log("Internet is Connected")
-                dispatch({ type: 'SET_LOADING', payload: true })
+                dispatch(fetchRequest(true))
                 axios
                     .get(Constants.BASE_URL, {
                         params: {
@@ -22,12 +23,13 @@ export const fetchWeatherForecastData = (zipCode) => {
                         },
                     })
                     .then((response) => {
-                        dispatch({ type: 'ADD_WEATHER_FORECAST_DATA', payload: response.data })
-                        dispatch({ type: 'SET_ERROR', payload: false })
+                        console.log("api response", response.data)
+                        dispatch(fetchSuccess(response.data))
 
                         if (response.status >= 400) {
                             console.log("Response Status : 404")
-                            dispatch({ type: 'SET_ERROR', payload: true })
+
+                            dispatch(fetchError(true))
                         }
 
                         saveDatatoAsyncStorage(zipCode, response.data)
@@ -37,19 +39,19 @@ export const fetchWeatherForecastData = (zipCode) => {
 
                         //net connected but entered wrong pincode
                         if (error.message === 'Request failed with status code 404') {
-                            dispatch({ type: 'SET_ERROR', payload: true })
+
+                            dispatch(fetchError(true))
                         }
                     })
                     .finally(() => {
                         console.log("Finally Block called")
-                        dispatch({ type: 'SET_LOADING', payload: false })
+                        dispatch(fetchRequest(false))
                     })
             } else {
                 console.log("Internet not connected")
                 const data = getDataFromAsyncStorage(zipCode)
-                console.log("Data Received from Async Storage...",data)
-                dispatch({ type: 'SET_ERROR', payload: false })
-                dispatch({ type: 'ADD_WEATHER_FORECAST_DATA', payload: data })
+                dispatch(fetchSuccess(data))
+
             }
 
         })
