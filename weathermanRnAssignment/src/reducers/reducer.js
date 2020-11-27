@@ -1,7 +1,7 @@
 import { WEATHER } from '../constants'
 
 const initState = {
-    data: [],
+    data: {},
     isLoading: false,
     isError: false
 }

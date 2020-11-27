@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {
     View,
-    Text,
     TextInput,
     StyleSheet,
     Button,
@@ -17,20 +16,12 @@ export default class SearchBar extends Component {
         }
     }
 
-
-    handleZipCode = (pincode) => {
-        this.setState({
-            pincode: pincode
-        })
-    }
-
     handleSearchCallback() {
         Keyboard.dismiss()
         this.props.onSearchCallback(this.state.pincode)
     }
 
     render() {
-        //const { onSearchCallback } = this.props
         return (
             <View>
                 <View >

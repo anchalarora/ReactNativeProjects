@@ -4,8 +4,7 @@ import {
   Text,
   StyleSheet,
   BackHandler,
-  FlatList,
- 
+  FlatList
 
 } from 'react-native';
 
