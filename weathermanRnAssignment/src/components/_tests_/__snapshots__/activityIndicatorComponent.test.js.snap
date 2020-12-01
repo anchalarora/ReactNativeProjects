@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should load Activity Indicator without crashing 1`] = `
+<ActivityIndicator
+  animating={true}
+  color="#FFFFFF"
+  hidesWhenStopped={true}
+  size="large"
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "space-around",
+      "marginTop": 50,
+      "padding": 10,
+    }
+  }
+/>
+`;

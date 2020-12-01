@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should load EmptyList without crashing 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "justifyContent": "center",
+      "marginEnd": 20,
+      "marginStart": 10,
+      "marginTop": 100,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#FFFFFF",
+        "fontSize": 16,
+        "textAlign": "center",
+      }
+    }
+  >
+     No Data Found. Try again!
+  </Text>
+</View>
+`;
+
+exports[`should render the Text element 1`] = `ShallowWrapper {}`;

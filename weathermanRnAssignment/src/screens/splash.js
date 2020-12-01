@@ -36,6 +36,7 @@ const Splash = ({ navigation }) => {
     setTimeout(() => {
         navigation.navigate('WeatherForecast');
     }, 2000);
+    
     return (
         <View style={styles.splashContainer}>
         <Animated.Image

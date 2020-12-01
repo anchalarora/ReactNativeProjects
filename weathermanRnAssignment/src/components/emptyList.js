@@ -16,7 +16,7 @@ const EmptyList = () => {
 const styles = StyleSheet.create({
     container: {
         marginStart: 10,
-        marginEnd: 10,
+        marginEnd: 20,
         marginTop: 100,
         flex: 1,
         justifyContent: "center",

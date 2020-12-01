@@ -1,24 +1,38 @@
 //import liraries
-import React, { Component } from 'react';
-import {  ToastAndroid } from 'react-native';
+import { Component } from 'react';
+import { ToastAndroid } from 'react-native';
 
+// const ToastAndroid = {
+//     SHORT: '',
+//     LONG: '',
+  
+//     TOP: '',
+//     BOTTOM: '',
+//     CENTER: '',
+  
+//     showWithGravityAndOffset: jest.fn(),
+//   };
+  
+//   module.exports = ToastAndroid;
 // create a component
 class ToastComponent extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
     render() {
         return (
             (ToastAndroid.showWithGravityAndOffset(
-               this.props.message,
+                this.props.message,
                 ToastAndroid.SHORT,
                 ToastAndroid.BOTTOM,
                 50,
                 200,
-              ), false)
+            ), false)
         );
     }
 }
+
+// define your styles
 
 //make this component available to the app
 export default ToastComponent;

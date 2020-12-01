@@ -21,6 +21,19 @@ export default class SearchBar extends Component {
         this.props.onSearchCallback(this.state.pincode)
     }
 
+    setZipCode = (zipcode) => {
+        this.setState({
+            pincode: zipcode
+        })
+    }
+
+    // setZipCode(zipcode){
+    //     this.setState({
+    //         pincode: zipcode
+    //     }) 
+    // }
+
+
     render() {
         return (
             <View>
@@ -32,9 +45,7 @@ export default class SearchBar extends Component {
                         color="#FFFFFF"
                         keyboardType="number-pad"
                         disableFullscreenUI={true}
-                        onChangeText={(pincode) =>
-                            this.setState({ pincode })
-                        }
+                        onChangeText={(pincode) => this.setZipCode(pincode) }
                         value={this.state.pincode}
                         //onSubmitEditing={(e) => this._handleTextChange(e)}
                         maxLength={6}
