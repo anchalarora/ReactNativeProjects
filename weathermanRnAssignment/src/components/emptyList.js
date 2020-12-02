@@ -8,7 +8,7 @@ import {
 const EmptyList = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.textStyle}> No Data Found. Try again!</Text>
+            <Text testID={'textItem'}style={styles.textStyle}> No Data Found. Try again!</Text>
         </View>
     )
 }

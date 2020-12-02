@@ -20,6 +20,7 @@ exports[`should load EmptyList without crashing 1`] = `
         "textAlign": "center",
       }
     }
+    testID="textItem"
   >
      No Data Found. Try again!
   </Text>

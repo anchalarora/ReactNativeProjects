@@ -8,10 +8,12 @@ const WeatherListItem = (props) => {
     return (
         <View
             style={styles.container}>
-            <Text style={styles.homeListItemText}>
+            <Text 
+            testID={'textItem1'} style={styles.homeListItemText}>
                 {props.item1}
             </Text>
-            <Text style={styles.homeListItemText}>
+            <Text testID={'textItem2'}
+            style={styles.homeListItemText}>
                 {props.item2}
             </Text>
         </View>

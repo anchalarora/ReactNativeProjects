@@ -40,19 +40,6 @@ let findElement = function (tree, element) {
   }
 
   return result;
-
-  //   let result = undefined;
-  //   let node;
-  //   for (node in tree.children) {
-  //     if (tree.children[node].children[node].props.testID == element) {
-  //       console.log(
-  //         'Inside for loop   ',
-  //         tree.children[node].children[node].props.testID,
-  //       );
-  //       result = true;
-  //     }
-  //   }
-  //   return result;
 };
 
 it('find TextInput in SearchBar', () => {
