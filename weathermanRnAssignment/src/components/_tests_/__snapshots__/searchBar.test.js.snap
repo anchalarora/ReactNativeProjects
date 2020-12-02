@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should load search bar view without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`should load search bar view without crashing 2`] = `
+<View>
+  <View>
+    <TextInput
+      allowFontScaling={true}
+      color="#FFFFFF"
+      disableFullscreenUI={true}
+      keyboardType="number-pad"
+      maxLength={6}
+      onChangeText={[Function]}
+      placeholder="Enter your pincode"
+      placeholderTextColor="#FFFFFF"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "borderColor": "#FFFFFF",
+          "borderWidth": 1,
+          "color": "#14A4F9",
+          "fontFamily": "Quicksand-Medium",
+          "fontSize": 20,
+          "marginTop": 20,
+          "padding": 10,
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+    <View
+      accessibilityRole="button"
+      accessibilityState={Object {}}
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {},
+          ]
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#007AFF",
+                "fontSize": 18,
+                "margin": 8,
+                "textAlign": "center",
+              },
+            ]
+          }
+        >
+          Search
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

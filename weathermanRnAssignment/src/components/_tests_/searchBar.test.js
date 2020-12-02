@@ -2,6 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 
 import SearchBar from '../searchBar'
+import {shallow} from 'enzyme'
 
 
 it('should load search bar view without crashing', () => {
@@ -20,7 +21,15 @@ it('should change state if zipCode is entered',()=>{
 
 it('should load search bar view without crashing', () => {
 
-    const searchBarComponent = shallow(<SearchBar />).toJSON()
+    const searchBarComponent = shallow(<SearchBar />)
+    expect(searchBarComponent).toMatchSnapshot()
+
+})
+
+
+it('should load search bar view without crashing', () => {
+
+    const searchBarComponent = renderer.create(<SearchBar />).toJSON()
     expect(searchBarComponent).toMatchSnapshot()
 
 })

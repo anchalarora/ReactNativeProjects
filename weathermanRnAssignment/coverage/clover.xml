@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1606743261731" clover="3.2.0">
-  <project timestamp="1606743261731" name="All files">
-    <metrics statements="61" coveredstatements="60" conditionals="30" coveredconditionals="18" methods="28" coveredmethods="23" elements="119" coveredelements="101" complexity="0" loc="61" ncloc="61" packages="2" files="8" classes="8"/>
+<coverage generated="1606910295220" clover="3.2.0">
+  <project timestamp="1606910295220" name="All files">
+    <metrics statements="52" coveredstatements="51" conditionals="20" coveredconditionals="12" methods="21" coveredmethods="17" elements="93" coveredelements="80" complexity="0" loc="52" ncloc="52" packages="2" files="7" classes="7"/>
     <package name="components">
-      <metrics statements="59" coveredstatements="58" conditionals="30" coveredconditionals="18" methods="28" coveredmethods="23"/>
+      <metrics statements="50" coveredstatements="49" conditionals="20" coveredconditionals="12" methods="21" coveredmethods="17"/>
       <file name="Button.js" path="C:\GitRepository\ReactNative\weathermanRnAssignment\src\components\Button.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
@@ -49,29 +49,17 @@
         <metrics statements="13" coveredstatements="12" conditionals="10" coveredconditionals="6" methods="10" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
-        <line num="9" count="2" type="cond" truecount="6" falsecount="4"/>
+        <line num="9" count="4" type="cond" truecount="6" falsecount="4"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="37" count="3" type="stmt"/>
-        <line num="38" count="3" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
-      </file>
-      <file name="toastComponent.js" path="C:\GitRepository\ReactNative\weathermanRnAssignment\src\components\toastComponent.js">
-        <metrics statements="9" coveredstatements="9" conditionals="10" coveredconditionals="6" methods="7" coveredmethods="6"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="cond" truecount="6" falsecount="4"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="32" count="1" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
       </file>
       <file name="weatherListItem.js" path="C:\GitRepository\ReactNative\weathermanRnAssignment\src\components\weatherListItem.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
