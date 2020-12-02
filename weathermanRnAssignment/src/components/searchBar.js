@@ -39,6 +39,7 @@ export default class SearchBar extends Component {
             <View>
                 <View >
                     <TextInput
+                        testID={'zipCodeInput'}
                         style={styles.homePincodeInput}
                         placeholder="Enter your pincode"
                         placeholderTextColor="#FFFFFF"
@@ -50,7 +51,7 @@ export default class SearchBar extends Component {
                         //onSubmitEditing={(e) => this._handleTextChange(e)}
                         maxLength={6}
                     />
-                    <Button title="Search" onPress={this.handleSearchCallback.bind(this)} />
+                    <Button testID={'searchButton'} title="Search" onPress={this.handleSearchCallback.bind(this)} />
 
                 </View>
             </View>

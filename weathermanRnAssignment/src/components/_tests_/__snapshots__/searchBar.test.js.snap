@@ -27,6 +27,7 @@ exports[`should load search bar view without crashing 2`] = `
           "padding": 10,
         }
       }
+      testID="zipCodeInput"
       underlineColorAndroid="transparent"
       value=""
     />
@@ -47,6 +48,7 @@ exports[`should load search bar view without crashing 2`] = `
           "opacity": 1,
         }
       }
+      testID="searchButton"
     >
       <View
         style={

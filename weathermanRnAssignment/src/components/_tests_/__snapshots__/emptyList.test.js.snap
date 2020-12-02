@@ -25,5 +25,3 @@ exports[`should load EmptyList without crashing 1`] = `
   </Text>
 </View>
 `;
-
-exports[`should render the Text element 1`] = `ShallowWrapper {}`;
